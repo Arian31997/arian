@@ -146,7 +146,10 @@ const P={home,shop,team,streamers,streamer:()=>streamer(s),register:()=>auth(1),
 app.innerHTML=(P[p]||home)(); window.scrollTo(0,0)}
 window.addEventListener('hashchange',()=>R2());
 
-async function api(p,m='GET',b){const r=await fetch(p,{method:m,headers:b?{'Content-Type':'application/json'}:{},body:b?JSON.stringify(b):undefined,credentials:'same-origin'});let j={};try{j=await r.json()}catch(e){}if(!r.ok){const e=new Error(j.error||'خطا در ارتباط با سرور');e.status=r.status;throw e}return j}
+async function api(p,m='GET',b){let r;try{r=await fetch(p,{method:m,headers:b?{'Content-Type':'application/json'}:{},body:b?JSON.stringify(b):undefined,credentials:'same-origin'})}catch(x){const e=new Error('به سرور وصل نشد. مطمئن شوید بک‌اند با npm start اجرا شده و سایت را از آدرس http://localhost:3000 باز کرده‌اید، نه با دابل‌کلیک روی فایل.');e.status=0;throw e}
+let j=null;try{j=await r.json()}catch(x){}
+if(!r.ok){const e=new Error(j&&j.error?j.error:'پاسخ سرور معتبر نیست (کد '+r.status+'). سایت باید از طریق server.js اجرا شود، نه یک سرور ساده‌ی فایل.');e.status=r.status;throw e}
+if(j===null)throw Object.assign(new Error('پاسخ سرور معتبر نیست؛ سایت باید از طریق server.js اجرا شود.'),{status:500});return j}
 const refresh=async()=>{try{ME=(await api('/api/me')).user}catch(e){ME=null}};
 const loadSv=async()=>{try{const j=await api('/api/servers');SVR=j.servers;QU=j.queue||{}}catch(e){}};
 async function R2(){const h=location.hash||'#/home';if(h.startsWith('#/dash/servers')||h==='#/home'||h==='#/')await loadSv();render()}
