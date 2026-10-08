@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ولورا | سرور رول‌پلی</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--c:#09090b;--ln:#1a1524;--p:#a855f7;--p2:#7c3aed;--t:#f4f2f8;--m:#8a8497;--ok:#22c55e;--er:#f87171;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}
+html,body{background:#000}
+body{color:var(--t);font-family:Vazirmatn,Tahoma,sans-serif;min-height:100vh;line-height:1.7}
+a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer;border:0;background:none}
+.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;padding:14px 5%;position:sticky;top:0;z-index:20;background:#000c;backdrop-filter:blur(8px)}
+.logo{display:flex;align-items:center;gap:6px;color:var(--p);font-weight:800;letter-spacing:1px;justify-self:start}.logo .ic{width:28px;height:28px}
+.menu{display:flex;gap:4px;background:#09090bcc;border:1px solid var(--ln);border-radius:99px;padding:5px;overflow-x:auto}
+.menu a{padding:6px 16px;border-radius:99px;color:var(--m);font-size:14px;white-space:nowrap}
+.menu a.on{color:#fff;background:radial-gradient(#a855f735,#a855f710)}
+.ia{display:flex;gap:8px;justify-self:end}
+.rb{width:38px;height:38px;border-radius:50%;background:var(--c);border:1px solid var(--ln);display:grid;place-items:center;overflow:hidden;color:var(--m)}
+.rb.tx{width:auto;padding:0 16px;font-size:13px;color:var(--t)}.rb img{width:100%;height:100%;object-fit:cover}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:10px 22px;border-radius:99px;font-weight:600;font-size:13px}
+.pri{background:var(--p);color:#12041f}.pri:hover{background:#c084fc}.pri:disabled{opacity:.5}
+.ghost{background:var(--c);border:1px solid var(--ln)}.ghost:hover{border-color:var(--p2)}
+.hero{text-align:center;padding:120px 5% 100px;background:radial-gradient(ellipse 55% 45% at 50% 0,#7c3aed24,transparent),radial-gradient(#ffffff0a 1px,transparent 1px) 0 0/22px 22px}
+.hero h1{font-size:clamp(38px,8vw,76px);font-weight:800;line-height:1.3}
+.hero p{color:var(--m);max-width:540px;margin:18px auto 30px}
+.row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.pills{display:flex;gap:10px;justify-content:center;margin-top:80px;flex-wrap:wrap}
+.pill{background:var(--c);border:1px solid var(--ln);border-radius:99px;padding:4px 14px;font-size:12px;display:flex;gap:8px;align-items:center}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 8px var(--ok);flex:none}.dot.r{background:#ef4444;box-shadow:0 0 8px #ef4444}
+.wrap{max-width:1100px;margin:auto;padding:50px 5% 80px}
+h2{text-align:center;font-size:28px;margin-bottom:28px}h2 b{color:var(--p)}
+.g2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.card{background:var(--c);border:1px solid var(--ln);border-radius:30px;padding:26px;position:relative;overflow:hidden}
+.card h3{font-size:22px;margin:8px 0 4px}.card p{color:var(--m);font-size:13px;margin-bottom:18px}
+.tag{background:#a855f729;color:#d8b4fe;font-size:11px;padding:2px 12px;border-radius:99px}
+.step{display:flex;justify-content:space-between;align-items:center;gap:12px}.step svg.big{width:70px;height:80px;flex:none}
+.auth{display:grid;grid-template-columns:1fr 1fr;min-height:100vh;direction:ltr}
+.abg{position:relative;background:radial-gradient(circle at 30% 30%,#7c3aed44,transparent 40%),radial-gradient(circle at 70% 70%,#3b0764aa,transparent 45%),#050507;filter:saturate(.8)}
+.abg .logo{position:absolute;top:22px;left:26px}
+.af{direction:rtl;display:grid;place-items:center;padding:24px}
+.box{width:100%;max-width:400px;background:var(--c);border:1px solid var(--ln);border-radius:38px;padding:30px;box-shadow:0 0 90px #7c3aed1a}
+.box h1{text-align:center;font-size:30px}.box .s{text-align:center;color:var(--m);font-size:13px;margin:4px 0 14px}
+label{display:block;font-size:12px;color:#c4b5fd;margin:12px 4px 6px}
+.in{width:100%;background:#040405;border:1px solid var(--ln);border-radius:99px;padding:11px 18px;outline:0}
+.in:focus{border-color:var(--p)}textarea.in{border-radius:20px;resize:vertical;margin:8px 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.box .btn.pri{width:100%;margin-top:18px;padding:12px}
+.err{color:var(--er);font-size:13px;min-height:22px;margin-top:10px;text-align:center}
+.or{display:flex;align-items:center;gap:10px;color:var(--m);font-size:12px;margin:14px 0}.or:before,.or:after{content:"";flex:1;border-top:1px solid var(--ln)}
+.soc{display:grid;grid-template-columns:1fr 1fr;gap:10px}.soc .btn{border-radius:99px}
+.sw{text-align:center;font-size:13px;margin-top:16px;color:var(--m)}.sw a{color:var(--p)}
+.dash{display:grid;grid-template-columns:250px 1fr;gap:18px;max-width:1200px;margin:10px auto 60px;padding:0 5%}
+.side{background:var(--c);border:1px solid var(--ln);border-radius:30px;padding:18px;height:fit-content}
+.me{display:flex;gap:10px;align-items:center;padding-bottom:14px;border-bottom:1px solid var(--ln);margin-bottom:10px}
+.me .rb{width:44px;height:44px}.me small{display:block;color:var(--m);font-size:11px}
+.si{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:16px;color:var(--m);font-size:14px;margin-top:4px;width:100%}
+.si .ic{width:30px;height:30px;padding:6px;border-radius:10px;background:#111114}
+.si.on{background:#a855f71c;color:#fff;border:1px solid #a855f73a}.si.on .ic{background:#a855f733;color:#d8b4fe}
+.si.out{color:var(--er)}.hr{border-top:1px solid var(--ln);margin:10px 0}
+.main{display:grid;gap:14px;align-content:start}
+.hd{text-align:center;padding:20px}.hd h3{margin:0}.hd p{margin:0}
+.srv{display:flex;justify-content:space-between;align-items:flex-start}.srv b{font-size:28px;display:block;line-height:1.3}.srv small,.cnt{color:var(--m);font-size:12px}
+.pr{display:flex;justify-content:space-between;align-items:center;margin:16px 0 4px;font-size:13px;color:var(--m)}.pr select{width:auto;padding:5px 14px;font-size:12px}
+.sub{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.sub h3,.sub p{margin:0}
+.price{font-size:28px;font-weight:800;color:var(--p);margin:6px 0}.price small{font-size:12px;color:var(--m);font-weight:400}
+.best{border-color:#a855f766}.ul{list-style:none;padding:0;margin:0 0 18px;color:var(--m);font-size:13px}.ul li:before{content:"✓ ";color:var(--p)}
+.item{border:1px solid var(--ln);border-radius:16px;padding:10px 14px;margin-top:8px;font-size:13px}.item small{color:var(--m);display:block}
+.blur{filter:blur(6px);user-select:none}.kv{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--ln);font-size:14px}.kv span{color:var(--m)}
+.foot{text-align:center;color:var(--m);font-size:12px;padding:30px}
+#toast{position:fixed;bottom:calc(24px + env(safe-area-inset-bottom,0px));left:50%;transform:translate(-50%,20px);background:#14101c;border:1px solid var(--p2);padding:10px 22px;border-radius:99px;font-size:13px;opacity:0;pointer-events:none;transition:.25s;z-index:99;max-width:90vw}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+.bar{height:6px;border-radius:9px;background:#14101c;overflow:hidden;margin-top:6px}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--p2),var(--p))}.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.chip{padding:5px 14px;border-radius:99px;border:1px solid var(--ln);font-size:12px;color:var(--m)}.chip.on{border-color:var(--p);color:#fff;background:#a855f71c}.chip.lk{opacity:.5}.chip:disabled{cursor:default}
+@media(max-width:800px){.auth{grid-template-columns:1fr}.abg{display:none}.dash{grid-template-columns:1fr}.nav{grid-template-columns:auto 1fr auto}.logo b{display:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<linearGradient id="vg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c084fc"/><stop offset="1" stop-color="#4c1d95"/></linearGradient>
+<symbol id="i-logo" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2C9 6 4 8 4 13a4 4 0 0 0 7 2.6C10.8 18 10.3 20 9.5 22h5c-.8-2-1.3-4-1.5-6.4A4 4 0 0 0 20 13c0-5-5-7-8-11z"/></symbol>
+<symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 16v-5a6 6 0 1 0-12 0v5l-2 2h16zM10 21h4"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+<symbol id="i-server" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7h.01M7 17h.01"/></symbol>
+<symbol id="i-headset" viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2M4 14h3v5H4zM17 14h3v5h-3z"/></symbol>
+<symbol id="i-apps" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/></symbol>
+<symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8" stroke-dasharray="3.1 3.2"/></symbol>
+<symbol id="i-out" viewBox="0 0 24 24"><path d="M9 21H5V3h4M16 17l5-5-5-5M21 12H9"/></symbol>
+<symbol id="i-steam" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="15.5" cy="9.5" r="2.5"/><path d="M3.5 14l5 2"/><circle cx="9" cy="16" r="1.5"/></symbol>
+<symbol id="i-discord" viewBox="0 0 24 24"><path d="M6 6c2-1 4-1.5 6-1.5S16 5 18 6c2 3 3 7 3 11-2 1.5-4 2-5 2l-1-2H9l-1 2c-1 0-3-.5-5-2 0-4 1-8 3-11z"/><circle cx="9" cy="12" r="1.3"/><circle cx="15" cy="12" r="1.3"/></symbol>
+<symbol id="i-google" viewBox="0 0 24 24"><path d="M20 12h-8M18.5 7.5A7.5 7.5 0 1 0 19.5 15"/></symbol>
+<symbol id="i-dl" viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></symbol>
+</defs></svg>
+<div id="app"></div><div id="toast"></div>
+<script>
+const app=document.getElementById('app'),tst=document.getElementById('toast');
+const FA='۰۱۲۳۴۵۶۷۸۹',fd=n=>String(n).replace(/\d/g,d=>FA[d]),nd=s=>s.replace(/[۰-۹]/g,d=>FA.indexOf(d)).replace(/[٠-٩]/g,d=>'٠١٢٣٤٥٦٧٨٩'.indexOf(d));
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const ic=n=>`<svg class="ic"><use href="#i-${n}"/></svg>`;
+let ME=null,SVR=[],QU={};const me=()=>ME;
+const sb=u=>u&&u.sub&&u.sub.exp>Date.now()?u.sub:null;
+const dt=t=>new Date(t).toLocaleDateString('fa-IR');
+let nx='',tt,show=false;
+function toast(m){tst.textContent=m;tst.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>tst.classList.remove('show'),2800)}
+const go=h=>{if(location.hash==='#/'+h)R2();else location.hash='#/'+h};
+
+const PL=[{id:'silver',n:'نقره‌ای',p:150000,l:1,f:['اولویت بالا در صف','رول نقره‌ای در دیسکورد']},{id:'gold',n:'طلایی',p:300000,l:2,f:['اولویت ویژه در صف','رول طلایی در دیسکورد','تیکت با اولویت']},{id:'plat',n:'پلاتینیوم',p:500000,l:3,f:['بالاترین اولویت در صف','رول پلاتینیوم در دیسکورد','پشتیبانی اختصاصی']}];
+const PRI=['معمولی','بالا','ویژه','برتر'];
+const STR=['Dayei_Black','admiralsitca'];let sel={};
+
+const avi=u=>u&&u.av?`<img src="${esc(u.av)}" alt="">`:ic('user');
+function nav(a){const u=me();return`<header class="nav"><a class="logo" href="#/home">${ic('logo')}<b>VELORA</b></a><nav class="menu">${[['home','خانه'],['shop','فروشگاه'],['team','تیم'],['streamers','استریمرها']].map(([k,t])=>`<a href="#/${k}" class="${a===k?'on':''}">${t}</a>`).join('')}</nav><div class="ia"><button class="rb" data-a="bell" aria-label="اعلان‌ها">${ic('bell')}</button>${u?`<a class="rb" href="#/dash/servers" aria-label="حساب">${avi(u)}</a>`:`<a class="rb tx" href="#/login">ورود</a>`}</div></header>`}
+const foot=()=>`<footer class="foot">© ولورا — تمامی حقوق محفوظ است</footer>`;
+
+function home(){const u=me();return nav('home')+`<main class="hero"><h1>رول‌پلی، بهتر از همیشه</h1><p>اینجا هر تصمیم پیامد دارد؛ با تمرکز روی نظم، واقع‌گرایی و کیفیت، تجربه‌ای ساخته شده که از اصول رول‌پلی فاصله نمی‌گیرد.</p><div class="row"><a class="btn ghost" href="#/${u?'dash/servers':'register'}">ورود به شهر ↗</a><a class="btn pri" href="#/shop">فروشگاه</a></div><div class="pills"><span class="pill"><i class="dot"></i>سرور اصلی ${fd((SVR[0]||{c:0}).c)}/${fd((SVR[0]||{m:120}).m)}</span><span class="pill"><i class="dot"></i>سرور آزمایشی ${fd((SVR[1]||{c:0}).c)}/${fd((SVR[1]||{m:32}).m)}</span></div></main>
+<section class="wrap"><h2>آموزش ورود به <b>ولورا</b></h2><div class="g2">
+<div class="card"><div class="step"><div><span class="tag">قدم اول</span><h3>نصب موارد موردنیاز</h3><p>از سایت VMP، کلاینت VMP و GTA را دانلود و نصب کنید.</p><a class="btn ghost" href="https://vmp.ir/" target="_blank" rel="noopener">${ic('dl')}دانلود</a></div><svg class="big" viewBox="0 0 60 70"><path d="M4 4h15l11 34L41 4h15L37 66H23z" fill="url(#vg)"/></svg></div></div>
+<div class="card"><div class="step"><div><span class="tag">قدم دوم</span><h3>ثبت نام</h3><p>در سایت ولورا ثبت نام کنید.</p><a class="btn ghost" href="#/${u?'dash/servers':'register'}">${u?'پنل کاربری':'ورود / ثبت‌نام'}</a></div><svg class="big" style="color:var(--p)"><use href="#i-logo"/></svg></div></div></div></section>`+foot()}
+
+function shop(){const u=me(),s=sb(u);return nav('shop')+`<section class="wrap"><h2>فروشگاه <b>ولورا</b></h2><div class="g2">${PL.map(p=>`<div class="card ${p.id==='gold'?'best':''}"><span class="tag">${p.id==='gold'?'محبوب':'اشتراک'}</span><h3>${p.n}</h3><div class="price">${fd(p.p.toLocaleString('en'))} <small>تومان / ۳۰ روز</small></div><ul class="ul">${p.f.map(x=>`<li>${x}</li>`).join('')}</ul>${s&&s.id===p.id?'<button class="btn ghost" disabled>اشتراک فعال شما</button>':`<button class="btn pri" data-a="buy" data-id="${p.id}">${u?'خرید':'ساخت حساب و خرید'}</button>`}</div>`).join('')}</div><p style="text-align:center;color:var(--m);font-size:12px;margin-top:20px">برای خرید باید وارد حساب خود باشید. پرداخت در این نسخه شبیه‌سازی می‌شود.</p></section>`+foot()}
+
+function team(){return nav('team')+`<section class="wrap"><h2>تیم <b>ولورا</b></h2><div class="g2">${[['omid','owner'],['mamadrezaAFK','developer']].map(([r,t])=>`<div class="card" style="text-align:center"><div class="rb" style="width:72px;height:72px;margin:0 auto 10px">${ic('user')}</div><h3>${r}</h3><p style="margin:0">${t}</p></div>`).join('')}</div></section>`+foot()}
+
+function streamers(){return nav('streamers')+`<section class="wrap"><h2>استریمرهای <b>ولورا</b></h2><div class="g2">${STR.map(n=>`<a class="card" href="#/streamer/${n}" style="display:block"><div class="sub" style="justify-content:flex-start;gap:14px"><span class="rb" style="width:60px;height:60px">${ic('user')}</span><div><h3>${n}</h3><p style="margin:0">آپارات · @${n}</p></div></div><div class="row" style="justify-content:flex-start;margin-top:16px"><span class="btn pri">مشاهده صفحه استریمر</span></div></a>`).join('')}</div></section>`+foot()}
+function streamer(n){const k=STR.find(x=>x.toLowerCase()===String(n).toLowerCase());if(!k)return streamers();return nav('streamers')+`<section class="wrap" style="max-width:1000px"><div class="sub" style="margin-bottom:16px"><div class="sub" style="gap:14px"><span class="rb" style="width:56px;height:56px">${ic('user')}</span><div><h3>${k}</h3><p>استریمر ولورا · آپارات</p></div></div><a class="btn ghost" href="#/streamers">بازگشت</a></div><div class="card" style="padding:14px"><iframe src="https://www.aparat.com/embed/live/${k}" title="${k}" style="width:100%;aspect-ratio:16/9;border:0;border-radius:20px;background:#000" allowfullscreen loading="lazy"></iframe></div><p style="text-align:center;color:var(--m);font-size:13px;margin:16px 0">اگر استریمر آفلاین باشد، پلیر خالی می‌ماند و با شروع لایو خودکار پخش می‌شود.</p><div class="row"><a class="btn pri" href="https://www.aparat.com/${k}/live" target="_blank" rel="noopener">تماشا در آپارات</a><a class="btn ghost" href="https://www.aparat.com/${k}" target="_blank" rel="noopener">کانال آپارات</a></div></section>`+foot()}
+
+function auth(reg){const f=(l,n,t,ph,x='')=>`<label>${l}</label><input class="in" name="${n}" type="${t}" placeholder="${ph}" ${x} required>`;
+return`<div class="auth"><div class="abg"><a class="logo" href="#/home">${ic('logo')}<b>VELORA</b></a></div><div class="af"><div class="box"><h1>${reg?'ثبت نام':'ورود'}</h1><div class="s">${reg?'حساب کاربری خود را بسازید':'وارد حساب کاربری خود شوید'}</div><form data-f="${reg?'reg':'log'}" novalidate>${reg?f('نام کاربری','u','text','نام کاربری انگلیسی','autocomplete="username" maxlength="20"')+f('شماره موبایل','m','tel','09123456789','dir="ltr" autocomplete="tel"')+f('ایمیل','e','email','name@email.com','dir="ltr" autocomplete="email"')+`<div class="two"><div>${f('رمز','p','password','••••••••','autocomplete="new-password"')}</div><div>${f('تکرار رمز','p2','password','••••••••','autocomplete="new-password"')}</div></div>`:f('نام کاربری یا ایمیل','u','text','نام کاربری انگلیسی','autocomplete="username"')+f('رمز','p','password','••••••••','autocomplete="current-password"')}<div class="err" role="alert"></div><button class="btn pri">${reg?'ساخت حساب کاربری':'ورود'}</button></form><div class="or">یا</div><div class="soc"><button class="btn ghost" data-a="soon">${ic('google')}</button><button class="btn ghost" data-a="soon">${ic('discord')}</button></div><div class="sw">${reg?'حساب کاربری دارید؟ <a href="#/login">ورود</a>':'حساب ندارید؟ <a href="#/register">ثبت نام</a>'}</div><div class="sw"><a href="#/home">بازگشت به خانه</a></div></div></div></div>`}
+
+const list=(a,t)=>(a||[]).slice().reverse().map(x=>`<div class="item"><b>${esc(x.t)}</b><small>${t} · ${dt(x.d)}${x.s?' · '+x.s:''}</small></div>`).join('');
+const TABS={
+servers(u){const l=sb(u)?sb(u).l:0;return`<div class="card hd"><h3>ورود به سرور</h3><p>سرور موردنظر و اولویت صف خود را انتخاب کنید</p></div><div class="g2">${SVR.map(v=>{const p=sel[v.id]||0,Q=QU[v.id],pos=Q?Q.pos:0;return`<div class="card"><div class="srv"><div><small>سرور</small><b>${esc(v.n)}</b></div><span class="pill"><i class="dot"></i>آنلاین</span></div><div class="pr"><span>بازیکنان</span><b style="color:var(--t)">${fd(v.c)} از ${fd(v.m)}</b></div><div class="bar"><i style="width:${Math.round(v.c/v.m*100)}%"></i></div><div class="pr" style="margin-top:18px"><span>اولویت صف</span></div><div class="chips">${PRI.map((x,i)=>`<button class="chip ${i===p?'on':''} ${i>l?'lk':''}" data-a="pri" data-id="${v.id}" data-i="${i}" ${Q?'disabled':''}>${i>l?'🔒 ':''}${x}</button>`).join('')}</div>${Q?`<div class="item" style="margin-top:16px"><b>در صف هستید — جایگاه ${fd(pos)}</b><small>اولویت: ${PRI[Q.p]} · کلاینت VMP را باز نگه دارید</small></div><button class="btn ghost" style="width:100%;margin-top:12px" data-a="q" data-id="${v.id}">لغو ورود</button>`:`<button class="btn pri" style="width:100%;margin-top:18px" data-a="q" data-id="${v.id}">ورود به سرور</button>`}</div>`}).join('')}</div>${l?'':'<div class="item" style="text-align:center">برای اولویت بالاتر در صف، اشتراک تهیه کنید — <a href="#/shop" style="color:var(--p)">فروشگاه</a></div>'}`},
+support(u){return`<div class="card"><h3>ارسال تیکت</h3><p>مشکل خود را برای تیم پشتیبانی بنویسید</p><form data-f="tk"><input class="in" name="t" placeholder="موضوع" maxlength="60" required><textarea class="in" name="b" rows="4" placeholder="توضیحات" maxlength="500" required></textarea><div class="err"></div><button class="btn pri">ارسال</button></form>${list(u.tk,'تیکت')}</div>`},
+app(u){const p=(u.ap||[]).find(x=>x.s==='در انتظار بررسی');return`<div class="card"><h3>درخواست ورود به سرور اصلی</h3><p>اپلیکیشن شما توسط تیم بررسی می‌شود</p>${p?'<div class="item"><b>درخواست شما ثبت شده است</b><small>وضعیت: در انتظار بررسی</small></div>':`<form data-f="ap"><input class="in" name="t" placeholder="نام کاراکتر" maxlength="40" required><textarea class="in" name="b" rows="6" placeholder="بک‌استوری کاراکتر (حداقل ۵۰ حرف)" maxlength="1500" required></textarea><div class="err"></div><button class="btn pri">ثبت درخواست</button></form>`}${list(u.ap,'درخواست')}</div>`},
+settings(u){const s=sb(u),lk=(k,n)=>`<div class="card sub"><div><h3>${n}</h3><p>${u[k]?'متصل: '+esc(u[k]):'پروفایل شما به '+n+' لینک نمی‌باشد'}</p></div>${u[k]?`<button class="btn ghost" data-a="unl" data-k="${k}">لغو لینک</button>`:`<form data-f="ln" data-k="${k}" class="sub" style="gap:6px"><input class="in" name="v" placeholder="شناسه" maxlength="40" style="width:130px" required><button class="btn ghost">لینک</button></form>`}</div>`;
+return`<div class="card sub"><div><h3>${s?'اشتراک '+s.n+' فعال است':'شما اشتراک فعالی ندارید'}</h3><p>${s?'تا '+dt(s.exp):'برای خرید اشتراک می‌توانید به صفحه فروشگاه مراجعه کنید'}</p></div><a class="btn pri" href="#/shop">فروشگاه</a></div>
+<div class="g2"><div class="card sub"><div><h3>پروفایل</h3><p>تنظیمات پروفایل خود را مدیریت کنید</p></div></div><div class="card sub"><div class="sub" style="justify-content:flex-start"><span class="rb" style="width:54px;height:54px">${avi(u)}</span><div><h3>عکس پروفایل</h3><p>حداکثر ۵۰۰ کیلوبایت</p></div></div><label class="btn pri" style="margin:0;color:#12041f">آپلود<input type="file" accept="image/png,image/jpeg,image/webp" data-c="av" hidden></label></div>${lk('dc','دیسکورد')}${lk('sm','استیم')}</div>
+<div class="card"><h3>اطلاعات حساب</h3><div class="${show?'':'blur'}"><div class="kv"><span>نام کاربری</span>${esc(u.u)}</div><div class="kv"><span>موبایل</span><bdi>${esc(u.m)}</bdi></div><div class="kv"><span>ایمیل</span><bdi>${esc(u.e)}</bdi></div><div class="kv"><span>تاریخ ساخت</span>${dt(u.cr)}</div></div><div class="row" style="margin-top:16px"><button class="btn ghost" data-a="info">${show?'پنهان کردن اطلاعات':'نمایش اطلاعات حساب'}</button></div></div>`}};
+function dash(t){const u=me();t=TABS[t]?t:'servers';const s=sb(u);return nav('')+`<div class="dash"><aside class="side"><div class="me"><span class="rb">${avi(u)}</span><div><b>${esc(u.u)}</b><small>${s?'اشتراک '+s.n:'بدون ساب'}</small></div></div>${[['servers','سرورها','server'],['support','پشتیبانی','headset'],['app','اپلیکیشن','apps']].map(([k,n,i])=>`<a class="si ${t===k?'on':''}" href="#/dash/${k}">${ic(i)}${n}</a>`).join('')}<div class="hr"></div><a class="si ${t==='settings'?'on':''}" href="#/dash/settings">${ic('gear')}تنظیمات</a><button class="si out" data-a="out">${ic('out')}خروج از حساب</button></aside><main class="main">${TABS[t](u)}</main></div>`}
+
+function render(){const[p,s]=(location.hash||'#/home').slice(2).split('/'),u=me();
+if(p==='dash'&&!u){nx='dash/'+(s||'servers');toast('ابتدا حساب بسازید یا وارد شوید');return go('register')}
+if((p==='login'||p==='register')&&u)return go(nx||'dash/servers');
+const P={home,shop,team,streamers,streamer:()=>streamer(s),register:()=>auth(1),login:()=>auth(0),dash:()=>dash(s)};
+app.innerHTML=(P[p]||home)(); window.scrollTo(0,0)}
+window.addEventListener('hashchange',()=>R2());
+
+async function api(p,m='GET',b){const r=await fetch(p,{method:m,headers:b?{'Content-Type':'application/json'}:{},body:b?JSON.stringify(b):undefined,credentials:'same-origin'});let j={};try{j=await r.json()}catch(e){}if(!r.ok){const e=new Error(j.error||'خطا در ارتباط با سرور');e.status=r.status;throw e}return j}
+const refresh=async()=>{try{ME=(await api('/api/me')).user}catch(e){ME=null}};
+const loadSv=async()=>{try{const j=await api('/api/servers');SVR=j.servers;QU=j.queue||{}}catch(e){}};
+async function R2(){const h=location.hash||'#/home';if(h.startsWith('#/dash/servers')||h==='#/home'||h==='#/')await loadSv();render()}
+setInterval(async()=>{if((location.hash||'').startsWith('#/dash/servers')&&!document.hidden){await loadSv();render()}},10000);
+
+document.addEventListener('click',async e=>{const b=e.target.closest('[data-a]');if(!b)return;const a=b.dataset.a,id=b.dataset.id;
+try{
+if(a==='bell')toast('اعلان جدیدی ندارید');
+else if(a==='soon')toast('ورود با این روش به‌زودی فعال می‌شود');
+else if(a==='out'){await api('/api/logout','POST',{});ME=null;QU={};sel={};show=false;toast('از حساب خارج شدید');go('home')}
+else if(a==='info'){show=!show;render()}
+else if(a==='unl'){ME=(await api('/api/link/'+b.dataset.k,'DELETE')).user;render()}
+else if(a==='pri'){const l=sb(me())?sb(me()).l:0,i=+b.dataset.i;if(i>l)toast('برای این اولویت اشتراک لازم است');else{sel[id]=i;render()}}
+else if(a==='q'){if(QU[id]){await api('/api/queue/'+id,'DELETE');toast('از صف خارج شدید')}else{await api('/api/queue/'+id,'POST',{p:sel[id]||0});toast('وارد صف سرور شدید')}await loadSv();render()}
+else if(a==='buy'){if(!me()){nx='shop';toast('برای خرید ابتدا حساب بسازید');return go('register')}const j=await api('/api/shop/buy','POST',{id});ME=j.user;toast('اشتراک '+j.user.sub.n+' فعال شد');render()}
+}catch(err){if(err.status===401){ME=null;toast(err.message);go('login')}else toast(err.message)}});
+
+document.addEventListener('change',e=>{if(e.target.dataset.c!=='av')return;const f=e.target.files[0];if(!f)return;
+if(f.size>500*1024){toast('حجم عکس بیشتر از ۵۰۰ کیلوبایت است');e.target.value='';return}
+const r=new FileReader();r.onload=async()=>{try{ME=(await api('/api/avatar','POST',{img:r.result})).user;render()}catch(err){toast(err.message)}};r.onerror=()=>toast('خواندن فایل ناموفق بود');r.readAsDataURL(f)});
+
+document.addEventListener('submit',async e=>{const f=e.target,t=f.dataset.f;if(!t)return;e.preventDefault();
+const d=Object.fromEntries(new FormData(f)),er=f.querySelector('.err'),btn=f.querySelector('button.pri'),fail=m=>{if(er)er.textContent=m;if(btn)btn.disabled=false};
+if(er)er.textContent='';if(btn)btn.disabled=true;
+try{
+if(t==='reg'){const U=(d.u||'').trim(),M=nd((d.m||'').trim()),E=(d.e||'').trim().toLowerCase();
+if(!/^[A-Za-z0-9_-]{3,20}$/.test(U))return fail('نام کاربری ۳ تا ۲۰ حرف و فقط انگلیسی، عدد، - و _ باشد');
+if(!/^09\d{9}$/.test(M))return fail('شماره موبایل معتبر نیست (مثل 09123456789)');
+if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(E))return fail('ایمیل معتبر نیست');
+if((d.p||'').length<8)return fail('رمز حداقل ۸ کاراکتر باشد');
+if(d.p!==d.p2)return fail('رمز و تکرار آن یکسان نیست');
+ME=(await api('/api/register','POST',{u:U,m:M,e:E,p:d.p})).user;toast('حساب شما ساخته شد');const n=nx||'dash/servers';nx='';go(n)}
+else if(t==='log'){if(!(d.u||'').trim()||!d.p)return fail('همه فیلدها را پر کنید');
+ME=(await api('/api/login','POST',{u:d.u.trim(),p:d.p})).user;const n=nx||'dash/servers';nx='';go(n)}
+else if(t==='tk'||t==='ap'){const T=(d.t||'').trim(),B=(d.b||'').trim();
+if(!T||!B)return fail('همه فیلدها را پر کنید');if(t==='ap'&&B.length<50)return fail('بک‌استوری حداقل ۵۰ حرف باشد');
+await api(t==='tk'?'/api/tickets':'/api/apps','POST',{t:T,b:B});await refresh();toast('ثبت شد');render()}
+else if(t==='ln'){const v=(d.v||'').trim();if(!v){if(btn)btn.disabled=false;return}
+ME=(await api('/api/link/'+f.dataset.k,'POST',{v})).user;toast('لینک شد');render()}
+}catch(err){if(err.status===401&&t!=='log'){ME=null;go('login')}fail(err.message)}});
+(async()=>{await refresh();await R2()})();
+</script>
+</body>
+</html>
